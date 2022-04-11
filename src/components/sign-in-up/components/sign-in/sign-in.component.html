@@ -1,0 +1,122 @@
+<div class="sign-in" [ngClass]="class_container_sing_in">
+  <div class="content-top">
+    <div class="content-img-logo">
+      <img src="../assets/files/images/logo-app.png" alt="" />
+    </div>
+
+    <div class="content-title-welcome">
+      <div class="circle"></div>
+      <p class="title-welcome">Welcome</p>
+    </div>
+  </div>
+
+  <div>
+    <div class="form">
+      <div class="content-email">
+        <label for="input-email">Email</label>
+        <input type="text" class="input-email" />
+      </div>
+
+      <div class="content-password">
+        <label for="input-password">Password</label>
+        <input type="text" class="input-password" />
+      </div>
+
+      <div class="content-check">
+        <input type="checkbox" class="check-human" />
+        <label for="check-human">I'm human</label>
+      </div>
+    </div>
+
+    <div class="content-buttons">
+      <button class="button-sign-in" type="submit">SIGN IN</button>
+    </div>
+
+    <div class="content-divider">
+      <div class="line-left"></div>
+      <p class="text-center">OR</p>
+      <div class="line-right"></div>
+    </div>
+
+    <div class="content-buttons">
+      <button class="sign-up" type="submit" (click)="GoSignUp()">
+        CREATE YOUR ACCOUNT
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="21.683"
+          height="17.5"
+          viewBox="0 0 21.683 17.5"
+        >
+          <path
+            d="M21.141,7.109H18.973V4.922a.546.546,0,0,0-.542-.547H17.347a.546.546,0,0,0-.542.547V7.109H14.636a.546.546,0,0,0-.542.547V8.75a.546.546,0,0,0,.542.547H16.8v2.188a.546.546,0,0,0,.542.547h1.084a.546.546,0,0,0,.542-.547V9.3h2.168a.546.546,0,0,0,.542-.547V7.656A.546.546,0,0,0,21.141,7.109ZM7.589,8.75A4.375,4.375,0,1,0,3.253,4.375,4.356,4.356,0,0,0,7.589,8.75Zm3.036,1.094h-.566a5.851,5.851,0,0,1-4.94,0H4.554A4.575,4.575,0,0,0,0,14.438v1.422A1.634,1.634,0,0,0,1.626,17.5H13.552a1.634,1.634,0,0,0,1.626-1.641V14.438A4.575,4.575,0,0,0,10.625,9.844Z"
+            fill=""
+          />
+        </svg>
+      </button>
+      <button class="sign-in-google" type="submit">
+        <span> SIGN IN WITH GOOGLE </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g transform="translate(-40 -314.705)">
+            <rect
+              width="24"
+              height="24"
+              transform="translate(40 314.705)"
+              fill="none"
+            />
+            <g transform="translate(43 317.705)">
+              <path
+                d="M8.64,1.841A10.341,10.341,0,0,0,8.476,0H0V3.481H4.844A4.14,4.14,0,0,1,3.048,6.2V8.456H5.956A8.777,8.777,0,0,0,8.64,1.841Z"
+                transform="translate(9 7.364)"
+                fill="#4285f4"
+              />
+              <path
+                d="M8.043,7.29A8.592,8.592,0,0,0,14,5.11L11.09,2.851a5.409,5.409,0,0,1-3.048.859A5.364,5.364,0,0,1,3.007,0H0V2.332A9,9,0,0,0,8.043,7.29Z"
+                transform="translate(0.957 10.71)"
+                fill="#34a853"
+              />
+              <path
+                d="M3.964,5.752a5.321,5.321,0,0,1,0-3.42V0H.957a9.011,9.011,0,0,0,0,8.084L3.964,5.752Z"
+                transform="translate(0 4.958)"
+                fill="#fbbc05"
+              />
+              <path
+                d="M8.043,3.58a4.862,4.862,0,0,1,3.44,1.346l2.581-2.581A8.649,8.649,0,0,0,8.043,0,9,9,0,0,0,0,4.958L3.007,7.29A5.364,5.364,0,0,1,8.043,3.58Z"
+                transform="translate(0.957)"
+                fill="#ea4335"
+              />
+              <path d="M0,0H18V18H0Z" fill="none" />
+            </g>
+          </g>
+        </svg>
+      </button>
+      <button class="sign-in-facebook" type="submit">
+        <span> SIGN IN WITH FACEBOOK </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g transform="translate(-0.081)">
+            <rect
+              width="24"
+              height="24"
+              transform="translate(0.081)"
+              fill="none"
+            />
+            <path
+              d="M18.354,33.967V48.388a1.967,1.967,0,0,1-1.967,1.967H12.893v-7.26h2.483l.356-2.77H12.893v-1.77c0-.8.221-1.348,1.372-1.348h1.467V34.733a19.721,19.721,0,0,0-2.139-.111,3.339,3.339,0,0,0-3.564,3.663v2.044H7.538V43.1h2.5v7.256H1.967A1.967,1.967,0,0,1,0,48.388V33.967A1.967,1.967,0,0,1,1.967,32H16.388A1.967,1.967,0,0,1,18.354,33.967Z"
+              transform="translate(3.003 -28.742)"
+              fill="#fff"
+            />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

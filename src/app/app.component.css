@@ -1,0 +1,78 @@
+@media (max-width: 540px) {
+  .content-img-left {
+    display: none !important;
+  }
+  .content-form-right {
+    width: 100% !important;
+  }
+}
+@media (max-width: 719px) {
+  .content-img-left {
+    width: 50%;
+  }
+  .content-form-right {
+    width: 50%;
+  }
+}
+@media (min-width: 720px) {
+  .content-img-left {
+    width: 60%;
+  }
+  .content-form-right {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1140px) {
+  /* .title-app,
+  .title-welcome {
+    font-size: 4rem !important;
+  } */
+}
+
+.content-form-right {
+  margin: auto;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 0.6rem;
+}
+
+.content-title-app .circle {
+  background-color: #fff;
+}
+
+.content-title-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.content-title-app p {
+  margin: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.content-img-left {
+  background-image: url("../assets/files/images/background-login.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #bdc0c1;
+}
+
+.content-img-left {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,178 @@
+/* container sign-in */
+.sign-in {
+  padding: 2rem;
+  max-width: 450px;
+  display: grid;
+  margin: auto;
+}
+
+/* Content Top */
+.content-top {
+  margin: auto 0;
+  margin-bottom: 3rem;
+}
+/* logo */
+.content-top .content-img-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.content-top .content-img-logo img {
+  width: 100px;
+  height: 100px;
+}
+/* Title */
+.content-title-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-title-welcome p {
+  margin: 0;
+  color: #11b69f;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 0.6rem;
+}
+.content-title-welcome .circle {
+  background-color: #11b69f;
+}
+
+/* form */
+.form {
+  margin-bottom: 3rem;
+}
+
+.form label:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.form input {
+  height: 40px;
+  background-color: #f8f8f8;
+  border-radius: 0.4rem;
+  border: solid 1px #c4c4c4;
+}
+.content-email,
+.content-password {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+/* buttons */
+/* Check-button */
+.content-check {
+  display: flex;
+  align-items: center;
+}
+.content-check input {
+  height: 20px;
+  width: 20px;
+  margin-right: 0.4rem;
+}
+
+.content-buttons button {
+  border-radius: 0.4rem;
+  border: none;
+  height: 2.9rem;
+  width: 100%;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.content-buttons .button-sign-in {
+  color: #fff;
+  background-color: #00af9c;
+}
+.content-buttons .button-sign-in:hover {
+  color: #00af9c;
+  background-color: #eff1ee;
+  border: solid 1px #c4c4c4;
+}
+.sign-up,
+.sign-in-google {
+  background-color: #eff1ee;
+  border: solid 1px #c4c4c4 !important;
+  margin-bottom: 1rem;
+  color: #393939;
+}
+.sign-up:hover,
+.sign-in-google:hover,
+.sign-in-facebook:hover {
+  color: #fff;
+  background-color: #00af9c;
+  border: none !important;
+}
+.sign-in-facebook span,
+.sign-in-google span {
+  vertical-align: middle;
+}
+
+/* divider */
+.content-divider {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.content-divider p {
+  margin: 0 0.5rem;
+  color: #0fb69e;
+  font-size: 0.9rem;
+}
+.content-divider div {
+  background-color: #bcc1c1;
+  height: 2px;
+  border-radius: 0.4rem;
+  width: 100%;
+  width: -moz-available; /* For Mozzila */
+  width: -webkit-fill-available; /* For Chrome */
+  width: stretch; /* Unprefixed */
+}
+
+/* svgs */
+.sign-up svg {
+  position: relative;
+  top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.sign-up svg path {
+  transition: 0.3s;
+  fill: #3e3e3e;
+}
+.sign-up:hover svg path {
+  fill: #fff !important;
+}
+.sign-in-google svg {
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+.sign-in-facebook {
+  background-color: #3a5998;
+  color: #fff;
+}
+.sign-in-facebook svg {
+  vertical-align: middle;
+}
+
+/* Show and Hidden container-sign-in */
+.hidden {
+  opacity: 0;
+  -ms-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  transition-delay: 0.2s;
+}
+.show {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  transition-delay: 0.4s;
+}
